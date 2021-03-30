@@ -1,36 +1,33 @@
-
 #include <iostream>
 #include <string>
 using namespace std;
 
 int main() {
-    cout << "´ç½ÅÀÇ ÀÌ¸§Àº ¹«¾ùÀÔ´Ï±î?"; // 
+    cout << "ë‹¹ì‹ ì˜ ì´ë¦„ì€ ë¬´ì—‡ìž…ë‹ˆê¹Œ?"; 
     string name;
-    getline(cin, name);
-    cout << "¹Ý°©½À´Ï´Ù." << name << "´Ô" << endl;
+    getline(cin, name); //ë„ì–´ì“°ê¸°ë¥¼ í•  ìˆ˜ ìžˆëŠ” getline í•¨ìˆ˜ ì´ìš©
+    cout << "ë°˜ê°‘ìŠµë‹ˆë‹¤." << name << "ë‹˜" << endl;
 
-    int price1, price2, price3;
+    int price1,price2,price3;
     int number1, number2, number3;
     int total;
 
-    cout << "appleÀÇ °¡°ÝÀº ¾ó¸¶ÀÔ´Ï±î?";
-    cin >> price1;
-    cout << "bananaÀÇ °¡°ÝÀº ¾ó¸¶ÀÔ´Ï±î?";
+    cout <<"appleì˜ ê°€ê²©ì€ ì–¼ë§ˆìž…ë‹ˆê¹Œ?";
+    cin >> price1; 
+    cout << "bananaì˜ ê°€ê²©ì€ ì–¼ë§ˆìž…ë‹ˆê¹Œ?";
     cin >> price2;
-    cout << "orangeÀÇ °¡°ÝÀº ¾ó¸¶ÀÔ´Ï±î?";
+    cout << "orangeì˜ ê°€ê²©ì€ ì–¼ë§ˆìž…ë‹ˆê¹Œ?";
     cin >> price3;
 
-    cout << "appleÀº ¸î °³ ÀÖ½À´Ï±î?";
+    cout << "appleì€ ëª‡ ê°œ ìžˆìŠµë‹ˆê¹Œ?";
     cin >> number1;
-    cout << "banana´Â ¸î °³ ÀÖ½À´Ï±î?";
+    cout << "bananaëŠ” ëª‡ ê°œ ìžˆìŠµë‹ˆê¹Œ ?";
     cin >> number2;
-    cout << "orange´Â ¸î °³ ÀÖ½À´Ï±î?";
+    cout << "orangeëŠ” ëª‡ ê°œ ìžˆìŠµë‹ˆê¹Œ?";
     cin >> number3;
 
-    total = (price1*number1)+(price2*number2)+(price3*number3)-500;
-    cout << "ÃÑ" << total << "¿ø ÀÔ´Ï´Ù.";
+    total = price1 * number1 + price2 * number2 + price3 * number3;
+    cout << "ì´" << total << "ì› ìž…ë‹ˆë‹¤.\n";
 
     return 0;
 }
-
-
