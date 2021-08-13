@@ -3,7 +3,7 @@ using namespace std;
 
 int a[90];
 
-int Pibo(int n) 
+unsigned long Pibo(int n) 
 {
 	a[0] = 0;
 	a[1] = 1;
@@ -15,7 +15,7 @@ int Pibo(int n)
 }
 
 int main() {
-	int n;
+	unsigned long n;
 	cin >> n;
 	cout << Pibo(n);
 }
